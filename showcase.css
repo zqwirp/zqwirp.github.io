@@ -8,10 +8,20 @@
   font-weight: normal;
   letter-spacing: 0.2em;
 }
-.showcase__footer {
-  margin: 50px 0 30px;
+
+.footbar {
   color: var(--neutral-0);
   text-align: center;
+  margin: 30px 0 15px;
+}
+.footbar hr {
+  width: 100%;
+  border-top: 1px solid var(--neutral-6);
+  color: transparent;
+}
+.footbar__body {
+  display: flex;
+  justify-content: space-between;
 }
 
 .project-group {
@@ -24,7 +34,7 @@
   display: grid;
   grid-gap: 20px;
   min-width: 0;
-  padding: 10px;
+  padding: 10px 10px 20px;
   word-wrap: wrap;
   border: 1px solid var(--neutral-5);
 }
@@ -37,11 +47,13 @@
   margin-bottom: 0.8em;
   font-size: 20px;
   font-weight: normal;
+  letter-spacing: 0.1em;
 }
 
 .project__desc {
   font-size: 14px;
   margin-bottom: 1.2em;
+  letter-spacing: 0.05em;
 }
 
 .project__btn-group {
@@ -50,23 +62,42 @@
   align-items: center;
 }
 
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .project__btn {
   padding: 0.2em 1em;
   border: 1px solid var(--neutral-1);
-  background-color: transparent;
   font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
   color: inherit;
-  cursor: pointer;
 }
 .project__btn:hover {
   background-color: var(--neutral-1);
   color: var(--neutral-9);
 }
-.project__hr {
+.project__btn.project__btn--pink {
+  border: 1px solid #f472b6;
+  color: #f472b6;
+}
+.project__btn.project__btn--pink:hover {
+  background-color: #f472b6;
+  color: var(--neutral-9);
+}
+
+.project-group hr {
   display: none;
   width: 100%;
   border-top: 1px dashed var(--neutral-5);
   color: transparent;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #f472b6;
 }
 
 @media screen and (min-width: 768px) {
@@ -86,13 +117,18 @@
   .project__img--reverse-order {
     order: 2;
   }
-
-  .project__hr {
+  .project-group hr {
     display: block;
+  }
+  .footbar {
+    margin: 55px 0 25px;
   }
 }
 
 @media screen and (min-width: 992px) {
+  .project-group {
+    gap: 55px;
+  }
   .project__title {
     margin-bottom: 1em;
     font-size: 24px;
@@ -106,6 +142,9 @@
     border: 1px solid var(--neutral-1);
     font-size: 16px;
     cursor: pointer;
+  }
+  .footbar {
+    margin: 70px 0 30px;
   }
 }
 
