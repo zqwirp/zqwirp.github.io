@@ -11,7 +11,6 @@
 
 .footbar {
   color: var(--neutral-0);
-  text-align: center;
   margin: 30px 0 15px;
 }
 .footbar hr {
@@ -22,6 +21,19 @@
 .footbar__body {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.footbar__icon-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footbar .icon {
+  width: 20px;
+  opacity: 0.5;
+}
+.footbar .icon:hover {
+  opacity: 1;
 }
 
 .project-group {
@@ -122,6 +134,9 @@
   }
   .footbar {
     margin: 55px 0 25px;
+  }
+  .footbar .icon {
+    width: 24px;
   }
 }
 
