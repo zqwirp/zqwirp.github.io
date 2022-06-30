@@ -1,0 +1,3 @@
+[submodule "advice-generator"]
+	path = advice-generator
+	url = https://github.com/zqwirp/fem-advice-generator.git
