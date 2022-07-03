@@ -1,3 +1,6 @@
 [submodule "advice-generator"]
 	path = advice-generator
 	url = https://github.com/zqwirp/fem-advice-generator-app.git
+[submodule "tip-calculator"]
+	path = tip-calculator
+	url = https://github.com/zqwirp/fem-tip-calculator-app.git
